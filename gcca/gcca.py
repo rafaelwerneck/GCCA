@@ -151,8 +151,8 @@ class GCCA:
         return z_list
 
     def fit_transform(self, *x_list):
-        self.fit(x_list)
-        self.transform(x_list)
+        self.fit(*x_list)
+        return self.transform(*x_list)
 
     @staticmethod
     def normalize(mat):
